@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="websida">
+      <div class="huvud">
+        <img src="./sans.png" alt="sans" />
+        <h2>
+          HOW RAD ARE YOU!? <br />
+          Sign up and find out
+        </h2>
+      </div>
+      <section class="formcontainer">
+        <div class="form">
+          <form action="https://httpbin.org/anything" method="post">
+            <div class="firstname">
+              <label for="firstname">First name</label>
+              <input id="firstname" name="firstname" type="text" required />
+            </div>
+
+            <div class="lastname">
+              <label for="lastname">Last name</label>
+              <input id="lastname" name="lastname" type="text" required />
+            </div>
+
+            <div class="password">
+              <label for="password">Password</label>
+              <input id="password" name="password" type="password" required />
+            </div>
+
+            <div class="email">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+
+            <div class="pet">
+              <label for="petselect">What are you?</label>
+              <select name="pet" id="petselect">
+                <option value="">choose what you are bro</option>
+                <option value="dog">Skatter boy</option>
+                <option value="cat">BMX kid</option>
+                <option value="hamster">Surfer dude</option>
+                <option value="parrot">Fly guy</option>
+              </select>
+            </div>
+
+            <div class="food">
+              <label for="food">What's your favorite food?</label>
+              <div class="food-options">
+                <div class="food-option">
+                  <input type="radio" value="pizza" name="food" id="pizza" />
+                  <label for="pizza">Pizza</label>
+                </div>
+                <div class="food-option">
+                  <input type="radio" value="pasta" name="food" id="pasta" />
+                  <label for="pasta">Burger</label>
+                </div>
+                <div class="food-option">
+                  <input type="radio" value="bread" name="food" id="bread" />
+                  <label for="bread">Chilidog</label>
+                </div>
+              </div>
+            </div>
+            <div class="verify">
+              <input
+                type="checkbox"
+                id="checkbox1"
+                name="checkbox1"
+                value="are you rad?"
+              />
+              <label for="checkbox1"> I am totally rad!</label>
+            </div>
+
+            <div>
+              <button class="Submit" type="submit">skicka</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
